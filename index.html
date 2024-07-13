@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Data in Firebase</title>
+    <link rel="stylesheet" href="css/syle.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -17,16 +18,20 @@
 <body>
 
 <section class="container mt-5">
-    <h1>Student Login (Midterm Class)</h1>
+    <h1>Student Login</h1>
     <form id="dataForm">
 
         <div class="mb-3">
             <label for="lastName" class="form-label">Instructor's Name:</label>
             <select class="form-select" id="instructorName">
-                <option>Choose...</option>
+                <option selected disabled value="">Choose...</option>
                 <option value="Mr. Von Maranan">Mr. Von Maranan</option>
                 <option value="Mr. Joshua Abella">Mr. Joshua Abella</option>
             </select>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">SRCODE</label>
+            <input type="text" class="form-control" id="srCode" placeholder="ex. 2x-XXXXX">
         </div>
         <div class="mb-3">
             <label for="lastName" class="form-label">Last Name:</label>
@@ -46,11 +51,9 @@
             <input type="text" class="form-control" id="pcNumber" placeholder="ex. 01 to 26" aria-describedby="basic-addon1">
         </div>
 
-        <div class="d-grid">
-            <button class="btn btn-primary" id="submitButton" type="button">Time-in</button>
+        <div class="d-grid mb-5">
+            <button class="btn btn-primary" id="submitButton" type="submit">TIME IN</button>
         </div>
-
-        <div class="message"></div>
     </form>
 </section>
 
